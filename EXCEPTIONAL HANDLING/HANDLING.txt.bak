@@ -1,0 +1,47 @@
+Error :- error is a abnormal condition whenever it occurs
+		execution of the program is stopped.
+
+Types of error :- Syntax error
+					- refer to have formal rules governing the construction of valid statements in a language.
+					- syntax error occurs when rules of a programming language are misutilized.
+				  Semantic error
+					- semantic error occurs when statements are not meaningful 
+					- semantic refers to the set of rules give the meaning of the statement.
+				  Run Time error
+					- that occurs during execution of the program.
+					- It is caused because of some illegal operation taking place.
+				  Logical error
+					- error which is caused a program to produce incorrect or undesired output.
+
+Black book by python by nageshwara rao	  
+
+
+
+Exception Handling :-
+					Even if a statement or expression is syntactically correct, it may cause
+					an error when an attempt is made to execute it error should come at run time 
+					is called exception handling
+					
+1. ZeroDivisionError
+2. NameError
+3. TypeError
+
+Syntax :- 
+
+try:
+	you do your operations here
+except:
+	If there is any exception,then execute this block......
+else:
+	If there
+	
+	
+Raise :- you can raise an exception in your own program by using the raise exception
+
+IOError
+ImportError
+ValueError
+KeyboardInterrupt
+EOFError
+
+xgsggsgsgsgs

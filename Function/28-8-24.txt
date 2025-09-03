@@ -1,0 +1,27 @@
+Module :- A module is a file containing python definitions and statements.
+       -> A module is a file containing group of variables,methods,functions and classes etc.
+       -> They are executed only the first time the module name is encountered in an import statement.
+       -> The file name is the module name with the suffix.py appended
+       Ex:-  mymodule.py
+
+       Types of module :- 
+       1. User-defined modules
+       2. Built-in modules
+            Ex:- array,math,numpy,sys
+            
+    
+    When and why use the module 
+    Assume that you are building a very large project.it will difficult to manage all logic within one single file so if you want to seperate your similar logic to a seperate file, you can use module.
+    It will not only seperate your logics but also help you to debug your code easily as you know which logic is defined in which module.
+    When a module is developed, it can be reused in any program that needs that module.
+
+
+    Creating a Module
+    mathoperation.py
+    def add(a,b):
+        return a+b
+    def sub(a,b):
+        return a-b
+
+
+    

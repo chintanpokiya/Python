@@ -1,0 +1,11 @@
+For Loop :- 
+The for loop is useful to iterate over the elements of sequence such as string,list,tuple,etc...
+
+for loop with range 
+
+a=range(5)
+for i in a:
+    print(i)
+
+for i in range(5):
+    print(i)

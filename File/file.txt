@@ -1,0 +1,52 @@
+Files :- File is a collection of data is available to a program.
+        We can retrieve and use data stored in a file whenever we required.
+Advantages :- 1. stored data is permanent unless someone remove it.
+              2. stored data can be shared.
+
+Types of files :- 
+1. Text File
+2. Binary File
+
+Text mode
+-> a file opened in text mode, treats its contents as if it contains text string of the str type.
+-> when you get data from a text mode file. python first encodes the raw bytes using either a platform dependent encoding or specified one.
+
+Binary mode
+-> A file opened
+
+
+Opening a file :- 
+
+If we want to use a file or its data first we have to open it.
+
+1.open() - open() function is used to open a file. It returns a pointer to the beginning of the file. This is called file handler or file object.
+Syntax :- 
+    open('filename',mode='r',buffering,encoding=None,errors=None,newline=None,closefd=True,opener=None)
+
+filename -> it represents a name of a file.
+mode -> it represents the purpose of opening the file. If defaults to 'r' which means open for reading in text mode.
+buffering -> It is an integer value used to set the size of the buffer for the file. We can pass 0 as buffering integer to inform to inform not to use any buffering.
+We can pass any positive integer.
+Default is 4096 or 8192 bytes.
+
+text file mode
+
+r - open for reading
+w - open for write
+x - open for exclusive with write. specified file must not be available.File is available it will show error fileexists error
+a - open for appending
+r+ - open for reading and then writing
+w+ - open for writing and then writing
+a+ - open for writing and then appending
+rb
+
+
+
+
+
+2-9-24
+=======
+Monday
+========
+
+

@@ -1,0 +1,80 @@
+import tkinter as tk
+from tkinter import messagebox
+import mysql.connector
+from mysql.connector import Error
+
+#Global database connection variable
+connection = None
+
+#database setup
+def setup_database():
+    global connection
+    try:
+        connection = mysql.connector.connect(
+            host ='localhost',
+            user='root',
+            password='',
+            database='items_db'
+        )
+        cursor = connection.cursor()
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS items(
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(255) NOT NULL UNIQUE
+            )
+        ''')
+        connection.commit()
+    except Error as e:
+        print(f"Error: {e}")
+    finally:
+        if connection.is_connected():
+            cursor.close()
+
+#Insert item into database
+
+def insert_item(item_name):
+    global connection
+    try:
+        cursor = connection.cursor()
+        cursor.execute('INSERT INTO items (name) VALUES (%s)',(item_name,))
+        connection.commit()
+    except mysql.connector.IntegrityError:
+        messagebox.showwarning("Warning","Item already exists..")
+
+#Fetch all items from database
+
+def fetch_items():
+    global connection
+    items = []
+    try:
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM items')
+        items = cursor.fetchall()
+    except Error as e:
+        messagebox.showerror("Error",str(e))
+    finally:
+        cursor.close()
+    return items
+
+#Delete item from database
+def delete_item(item_id):
+    global connection
+    try:
+        cursor = connection.cursor()
+        cursor.execute('DELETE FROM items WHERE id = %s',(item_id,))
+        connection.commit()
+    except Error as e:
+        messagebox.showerror("Error",str(e))
+    finally:
+        cursor.close()
+
+#GUI application
+class ItemApp:
+    def __init__(self,root):
+        self.root = root
+        self.root.title("Item List")
+
+        self.label = tk.Label(root,text)
+
+if __name__ == "__main__":
+    

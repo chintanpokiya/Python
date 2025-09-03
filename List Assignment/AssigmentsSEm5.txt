@@ -1,0 +1,21 @@
+"""
+Write a MENU Driven Program for Following operation On List
+1. Create Empty List with List() and and range function
+2. Display List
+3. Count No of Elements in List
+4  Create another list OddList and EvenList
+5. Display ODD and EVEN LISt ELEMENT
+6. Check entered Element is In List Exist or Not
+7. Print elements of List which is devided  By 5
+8. Print the sum of element List
+9. Create Two List of any element and copyBoth elements to Third
+   List
+10. Count no of int element , float element and string
+    form list
+0. Exit
+ Employee ID :2091
+ Author: V.U.Ingle
+ Date o Creation :---
+ Time OF Creation :---
+
+"""

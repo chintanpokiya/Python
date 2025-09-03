@@ -1,0 +1,17 @@
+Python is a general purpose high level programming language.
+Developed by Guido van Rossum in 1991.
+It is used in software development, web development, system Scripting.
+
+Features of Python
+1.Easy to use
+2.Interpreted Language
+3.Cross-platform language
+4.Expressive language
+5.Completeness
+6.Free & Open Source
+
+Shortcomings of python
+
+1.Lesser libraries
+2.Slow language
+3.Weak of type-binding

@@ -1,0 +1,17 @@
+Range :- 
+    range() functions is used to generate a sequence of integers starting from 0 by default, 
+    and increments by 1 default,till j-1.
+
+Syntax :-
+    range(start,stop,stepsize)
+
+Syntax :- 
+    range(j)       j-1
+    range(i,j)     i+1,i+2,.....j-1
+    range(i,j,k)   i,i+k,i+2k,.......,j-1
+    range(-1,-10,-20) -1,-3,-5,-7,-9
+
+Rules :- 
+    All argument must be integers, whether its +ve or -ve.
+    you can not pass a string or float number or any other type in start,stop and stepsize.
+    the stepsize value should not be zero.

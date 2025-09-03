@@ -1,0 +1,40 @@
+#Query 1 : Display all records
+import pandas as pd
+
+df = pd.read_csv("Z:\Sem-5\PYTHON\DataFrame\employeedata.csv")
+print(df)
+print(dir(df))
+
+#query 2 and 3 : total no of rows and columns
+
+print(df.shape)
+
+#our turn
+
+row,column=df.shape
+
+print("No of rows :- ",row)
+print("No of columns :- ",column)
+
+#Query 4 and 5 : Retrive few head and few tail records
+
+print("First Few Rows of the dataframe")
+print(df.head())
+
+print("Last Few Rows of the dataframe")
+print(df.tail())
+
+#Query 6 : Retrieve a range of row
+
+print("Print Range of row are :- ")
+print(df[2:5])
+
+#Query 7 and 8 : Retireve even and odd records(rows)
+
+print("Even Records are :- ")
+print(df[::2])
+
+print("Odd record are :- ")
+print(df[1::2])
+
+

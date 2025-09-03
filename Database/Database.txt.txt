@@ -1,0 +1,19 @@
+Q-1 Difference Between file and database
+		OR
+Q-2 What is the limitations of file 
+
+1.Duplicate Data
+2.file we can join 
+3.Manipulation
+4.Slow processing
+5.Security
+
+Step 1: IMPORT MODULE
+Step 2:CONNECT THE MYSQL
+Step 3:CREATE DATABASE
+Step 4:SHOW DATABAS
+Step 5:Connect database
+Step 6:CREATE TABLE UNDER pdb DATABASE
+6.1 SHOW TABLE
+Step 7:INSERT A SINGLE ROW IN STUDENT1
+Step 8:INSERT MULTIPLE RECORDS AT A TIME
